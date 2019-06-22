@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const deleteBtn = '<button type="button" class="btn btn-outline-danger btn-sm" data-type="delBtn">Delete Contact</button>';
     const addBtn = document.getElementById('addNewBtn');
     
-    get(url).then(function(response) {
+    axios.get(url).then(function(response) {
         contacts = response.data;
         render(contacts);
     });

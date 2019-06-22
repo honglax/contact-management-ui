@@ -13,17 +13,22 @@ document.addEventListener('DOMContentLoaded', function() {
         // Fetch all the forms we want to apply custom Bootstrap validation styles to
         const forms = document.getElementsByClassName('needs-validation');
         let validation = Array.prototype.filter.call(forms, function(form) {
-            form.addEventListener('submit', function(event) {
-                if (form.checkValidity() === false) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-                form.classList.add('was-validated');
-            });
+            // form.addEventListener('click', function(event) {
+            //     if (form.checkValidity() === false) {
+            //         event.preventDefault();
+            //         event.stopPropagation();
+            //     }
+            //     form.classList.add('was-validated');
+            // }, false);
+            if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            form.classList.add('was-validated');
         });
     };
 
-    function addNewContact() {
+    function addNewContact(event) {
         const fullName = txtName.value;
         const address = txtAddress.value;
         const phoneNum = txtPhoneNum.value;
@@ -38,14 +43,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     phone: phoneNum
                 }
             };
-            post(url, newContact).then(function(response) {
-                alert('Add New Contact successfully.')
+            axios.post(url, newContact).then(function(response) {
+                // alert('Add New Contact successfully.')
+                window.location = './';
             });
-            backToHome;
         }
     };
 
     function backToHome(event) {
-        window.location.replace('./');
+        window.location = './';
     };
 });
