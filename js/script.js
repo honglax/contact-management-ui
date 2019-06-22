@@ -1,4 +1,3 @@
-'use strict';
 document.addEventListener('DOMContentLoaded', function() {
     const contactTable = document.getElementById('contact-info');
     const contactBody = contactTable.children[1];
@@ -8,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const deleteBtn = '<button type="button" class="btn btn-outline-danger btn-sm" data-type="delBtn">Delete Contact</button>';
     const addBtn = document.getElementById('addNewBtn');
     
-    axios.get(url).then(function(response) {
+    get(url).then(function(response) {
         contacts = response.data;
         render(contacts);
     });

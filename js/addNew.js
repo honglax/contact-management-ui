@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     phone: phoneNum
                 }
             };
-            axios.post(url, newContact).then(function(response) {
+            post(url, newContact).then(function(response) {
                 alert('Add New Contact successfully.')
             });
             backToHome;
