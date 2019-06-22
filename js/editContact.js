@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const url = 'http://localhost:9081/contacts';
     const addNewBtn = document.getElementById('addNewBtn');
     const saveBtn = document.getElementById('saveBtn');
@@ -13,10 +13,12 @@ document.addEventListener('DOMContentLoaded', function() {
         formInfoRender();
     }
 
+    txtName.focus();
+
     if (backBtn) {
         backBtn.addEventListener('click', backToHome);
     }
-    
+
     if (addNewBtn) {
         addNewBtn.addEventListener('click', addNewContact);
     }
@@ -26,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function formInfoRender() {
-        axios.get(url + '/' + id).then(function(response) {
+        axios.get(url + '/' + id).then(function (response) {
             contact = response.data;
             txtName.value = contact.info.name;
             txtAddress.value = contact.info.address;
@@ -37,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function formValidation() {
         // Fetch all the forms we want to apply custom Bootstrap validation styles to
         const forms = document.getElementsByClassName('needs-validation');
-        let validation = Array.prototype.filter.call(forms, function(form) {
+        let validation = Array.prototype.filter.call(forms, function (form) {
             if (form.checkValidity() === false) {
                 event.preventDefault();
                 event.stopPropagation();
@@ -61,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     phone: phoneNum
                 }
             };
-            axios.post(url, newContact).then(function(response) {
+            axios.post(url, newContact).then(function (response) {
                 window.location = './';
             });
         }
@@ -82,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     phone: phoneNum
                 }
             };
-            axios.put(url + '/' + id, editedContact).then(function(response) {
+            axios.put(url + '/' + id, editedContact).then(function (response) {
                 window.location = './';
             });
         }

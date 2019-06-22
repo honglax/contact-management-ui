@@ -2,22 +2,6 @@
   "contacts": [
     {
       "info": {
-        "name": "Jason",
-        "address": "Biên Hòa - Đồng Nai",
-        "phone": "09891110991"
-      },
-      "id": "1"
-    },
-    {
-      "info": {
-        "name": "Lucky",
-        "address": "Thành phố Hồ Chí Minh",
-        "phone": "0796841341"
-      },
-      "id": "2"
-    },
-    {
-      "info": {
         "name": "Đỗ Thị Lương",
         "address": "Biên Hòa - Đồng Nai",
         "phone": "0944405979"
@@ -26,17 +10,9 @@
     },
     {
       "info": {
-        "name": "Lã Xuân Phóng",
-        "address": "620/22 Đồng Khởi",
-        "phone": "0936039728"
-      },
-      "id": "W-v0EXo"
-    },
-    {
-      "info": {
         "name": "Phùng Phát",
         "address": "Passio 254 Nguyễn Đình Chiểu",
-        "phone": "098911"
+        "phone": "09891110991"
       },
       "id": "MA_f4zt"
     },
@@ -44,9 +20,25 @@
       "info": {
         "name": "Trần Thụy Yến Nhi",
         "address": "Aeon Mall Tân Phú",
-        "phone": "01216841371"
+        "phone": "01216841372"
       },
       "id": "6wB7v_o"
+    },
+    {
+      "info": {
+        "name": "Jason",
+        "address": "Biên Hòa - Đồng Nai",
+        "phone": "0989110991"
+      },
+      "id": "szaoqT4"
+    },
+    {
+      "info": {
+        "name": "Lucky",
+        "address": "Bình Tân",
+        "phone": "0796841341"
+      },
+      "id": "4qOrZJH"
     }
   ]
 }
