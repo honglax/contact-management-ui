@@ -29,13 +29,20 @@ document.addEventListener('DOMContentLoaded', function() {
         if (button.localName != 'button') {
             return;
         }
-        var index = parseInt(button.parentNode.parentNode.dataset.id);
+        var index = button.parentNode.parentNode.dataset.id;
         if (button.dataset.type == 'edtBtn') {
-            // console.l
+            window.location = './edit-contact.html#' + index;
         }
         if (button.dataset.type == 'delBtn') {
-            
+            newContacts = contacts.filter(function(contact) {
+                return contact.id != index;
+            });
+            render(newContacts);
+            contacts = newContacts;
+            axios.delete(url + '/' + index).then(function(response) {
+
+            });
         }
-     }
+    };
 
 });

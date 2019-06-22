@@ -1,28 +1,20 @@
 {
   "contacts": [
     {
-      "id": "1",
       "info": {
         "name": "Jason",
-        "address": "Bien Hoa",
+        "address": "Biên Hòa - Đồng Nai",
         "phone": "09891110991"
-      }
+      },
+      "id": "1"
     },
     {
-      "id": "2",
       "info": {
         "name": "Lucky",
-        "address": "HCM City",
+        "address": "Thành phố Hồ Chí Minh",
         "phone": "0796841341"
-      }
-    },
-    {
-      "info": {
-        "name": "Neo",
-        "address": "Phú Quốc",
-        "phone": "0358584581"
       },
-      "id": "fDcau89"
+      "id": "2"
     },
     {
       "info": {
@@ -43,7 +35,7 @@
     {
       "info": {
         "name": "Phùng Phát",
-        "address": "254 NĐC",
+        "address": "Passio 254 Nguyễn Đình Chiểu",
         "phone": "098911"
       },
       "id": "MA_f4zt"
@@ -55,14 +47,6 @@
         "phone": "01216841371"
       },
       "id": "6wB7v_o"
-    },
-    {
-      "info": {
-        "name": "AFS",
-        "address": "ASFasf",
-        "phone": "asfasf"
-      },
-      "id": "taoDpQv"
     }
   ]
 }
